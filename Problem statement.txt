@@ -1,0 +1,15 @@
+Problem Statement
+Insurance companies are taking more time to verify and process medical insurance claims.
+Manual verification processes increase claim processing delays and operational workload.
+Usually, insurance claim updates take around 7–15 days to complete.
+There are mainly two types of medical insurance claims:
+Cashless Claim
+Reimbursement Claim
+In a cashless claim, the insurance company directly pays the hospital expenses.
+Cashless claim processing generally takes around 2–4 days for approval and settlement.
+In a reimbursement claim, the customer first pays the hospital bill and later claims reimbursement from the insurance company.
+Reimbursement claims usually take around 10–20 days for verification and payment processing.
+Recently, there has been an increase in fraudulent activities in medical insurance claims.
+In the initial stage, companies manually verify insurance policy IDs, hospital reports, and uploaded medical documents before processing claims.
+These document verification and validation procedures consume significant time and may lead to human errors.
+To solve these issues, the AI Claim Assistant automatically verifies reports, extracts claim information, generates summarized reports, reduces manual effort, speeds up claim processing, and minimizes human interaction.

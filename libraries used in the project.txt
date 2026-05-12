@@ -1,0 +1,17 @@
+AI CLAIM ASSISTANT 
+
+libraries used to create the model 
+1.stream --> for  creating the interactive dashboards 
+2.pandas --> used for handling the file datatypes 
+3. temp --> the image uploaded by the user will be stored as tempt file and that tempt file path will be given to the ocr 
+4.paddle ocr --> after getting the file that file will be taken by paddle ocr and paddle ocr will be extract the data from the image 
+5. os ----> after ocr is done the temp file will be deleted 
+6.re (regular expression )-----> this regular expression module is used for the search the names and hospital name and doctor name and hospital address from the data extracted from the paddle ocr 
+7.jscon --> after extracting the data that will be converted into the jscon file 
+8.Request --> now we will calling the api or ollama or ai model to verify the details 
+9.unicode data --> this module is used to remove or correct the format of the data provided by the ocr 
+10.from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer 
+from reportlab.lib.styles import getSampleStyleSheet
+ from reportlab.lib.pagesizes import A4 -------------------> actually here the module is used for creating the pdf and that will be stored 
+11.import smtplib ------> used to send the mails 
+

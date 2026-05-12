@@ -1,0 +1,41 @@
+Prompt used in the ollama 
+
+Extract insurance claim data.
+
+Return ONLY JSON:
+{{
+"patient_name":"",
+"doctor_name":"",
+"doctor_valid":true,
+"hospital_name":"",
+"total_claim_amount":0,
+"date":"",
+"medicines":""
+
+
+Solution of ollama issue 
+
+->If the ollama is not responding 
+
+->Follow the below commands 
+
+Step -1 
+
+netstat -ano | findstr :11434
+
+Step -2 
+
+taskkill /PID 19068 /F
+
+Step-3
+
+taskkill /F /IM "ollama app.exe"
+
+Step-4 
+
+taskkill /F /IM ollama.exe
+
+Step-5 
+ollama serve
+
+
