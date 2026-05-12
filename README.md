@@ -1,0 +1,2 @@
+# AI-Claim-Assistant
+The AI Claim Assistant is an intelligent insurance automation system that uses OCR, AI, and rule-based validation to process medical insurance claims. It extracts bill data, verifies policy details, calculates claim amounts, generates PDF reports, and sends automated email notifications efficiently.
