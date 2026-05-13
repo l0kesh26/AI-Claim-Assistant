@@ -1,0 +1,8 @@
+streamlit
+pandas
+requests
+paddleocr
+paddlepaddle
+reportlab
+numpy
+opencv-python
