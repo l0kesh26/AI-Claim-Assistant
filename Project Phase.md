@@ -1,0 +1,262 @@
+**AI Claim Assistant – Project Phases**
+
+
+
+Phase 1: Requirement Analysis
+
+
+
+Phase 2: System Design
+
+
+
+Phase 3: Frontend Development
+
+
+
+Phase 4: OCR Integration
+
+
+
+Phase 5: AI Data Extraction
+
+
+
+Phase 6: Validation \& Claim Processing
+
+
+
+Phase 7: Report Generation
+
+
+
+Phase 8: Email Automation
+
+
+
+
+
+**1.Phase 1 : Requirement Analysis** 
+
+
+
+1.In first phase-1 we have identified the insurance claim processing requirement 
+
+2.Later we have consider the problem statement and written what were the objective required for the project 
+
+3.Collected the policy and medical bills from the different websites 
+
+4.Then we have created a sample database or test file for the project 
+
+
+
+**2.Phase 2 :System Design**
+
+
+
+1.In phase-2 we have started working on system design 
+
+2.In this phase we have found what and libraries required to built this project 
+
+3.We have identified and written the required libraries ("for reference you check in the git repo file name is lib.txt")
+
+4.In phase-2 itself we have identified the all the ai model and ocr which we need to use to get the exact output.
+
+
+
+**3.Phase 3: Frontend Development**
+
+
+
+1.In phase-3 we have development the authentication system 
+
+2.Here only authorized user will be allowed to enter the into the AI system 
+
+3.After authentication policy validation is set-up to verify the policy 
+
+4.Then only the user will be allowed to the next phase 
+
+
+
+**4.Phase 4: OCR Integration** 
+
+
+
+1.In OCR Integration we have tried with two OCR 
+
+&#x09;1.Easy OCR 
+
+&#x09;2.Paddle OCR
+
+2.As there are lot of limitation in easy ocr so we have used Paddle OCR 
+
+3.We have integrated the paddle ocr in our model 
+
+4.After uploading the image the ocr will be called and it will extract the data in this phase.
+
+
+
+**5. Phase 5 :AI Data Extraction**
+
+
+
+1.AI Data Extraction phase the data which is obtained in the ocr integration  
+
+2.By  using rex lib the names and hospital name all be extracted 
+
+3.These will be stored in the jscon 
+
+4.This jscon file will be transferred or sent to the llm
+
+
+
+**6. Phase 6: Validation \& Claim Processing**
+
+
+
+1.In this phase the hospital and doctor validation will takes places 
+
+2.After validating details the data will be transferred to the verification step
+
+3.Based on below rule the score will be done 
+
+Criteria		Logic				Score
+
+
+
+Name		Present and matches database		20
+
+
+
+Doctor 		Name, Present on document		20
+
+
+
+Doctor 		Validity, Verified credentials		20
+
+
+
+Hospital 	Name, Verified institution		20
+
+
+
+Date 	Validity, Must be within a 60-day window	20
+
+
+
+
+
+**7. Phase 7: Report Generation**
+
+
+
+1.In this phase if the above store is more than 80 then only the pdf generation takes 
+
+
+
+2.If the score is less the 80 there will no pdf generation will be done 
+
+
+
+3.This pdf generation will help the company or organization to resolve to start the claim faster
+
+
+
+4.In this phase only work for one scenario.
+
+
+
+**8. Phase 8: Email Automation**
+
+
+
+1.In this phase we will be creating the mail automation and there 2 scenarios 
+
+&#x09;
+
+&#x09;**1.Scenario-1 :** 
+
+&#x09;	
+
+&#x09;	->If the claim score is more than 80 
+
+&#x09;		
+
+&#x09;		Organization :
+
+&#x20;
+
+&#x09;			->It will generate the pdf and it will send a the mail to organization mentioning that you can start the claim 
+
+&#x09;		 
+
+&#x09;		Client or User :
+
+&#x09;		
+
+&#x09;			->It will send mail to the user stating that the claim as started successfully
+
+
+
+&#x09;
+
+&#x09;**2.Scenario-2 :**
+
+
+
+&#x09;	->If the claim score is less than 80 
+
+&#x09;
+
+&#x09;		Organization :
+
+
+
+&#x09;			->It will not generate the pdf and organization wont be getting any mail.
+
+
+
+&#x09;		Client or User :
+
+
+
+&#x09;			->It will send mail to the user stating that the claim as failed please re-apply the claim.
+
+
+
+&#x09;		
+
+&#x09;			
+
+&#x09;		
+
+
+
+
+
+&#x20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
